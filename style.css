@@ -22,7 +22,7 @@ img {
   width: 100%;
   height: 100dvh;
   position: relative;
-  background-image: url("img/main.jpg");
+  background-image: url("img/main.JPG");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -310,7 +310,11 @@ img {
 /* Добавляем стили для секции с таймером */
 .countdown {
   /* min-height: 100vh; */
-  background: linear-gradient(135deg, var(--background-light) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--background-light) 0%,
+    var(--secondary-color) 100%
+  );
   display: flex;
   align-items: center;
   padding: 6rem 0;
@@ -352,7 +356,12 @@ img {
   transform: translateX(-50%);
   width: 150px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color),
+    transparent
+  );
 }
 
 .countdown__wrapper {
@@ -484,13 +493,21 @@ img {
   transform: translateX(-50%);
   width: 60px;
   height: 2px;
-  background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--secondary-color)
+  );
 }
 
 /* Видео секция */
 .video-section {
   padding: 3rem 0;
-  background: linear-gradient(135deg, var(--light-accent) 0%, var(--background-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--light-accent) 0%,
+    var(--background-light) 100%
+  );
   position: relative;
   overflow: hidden;
 }
@@ -539,7 +556,11 @@ img {
 /* Галерея */
 .gallery {
   padding: 3rem 0;
-  background: linear-gradient(135deg, var(--background-light) 0%, var(--light-accent) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--background-light) 0%,
+    var(--light-accent) 100%
+  );
 }
 
 .gallery__grid {
@@ -583,7 +604,11 @@ img {
 /* Локация */
 .location {
   padding: 3rem 0;
-  background: linear-gradient(135deg, var(--light-accent) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--light-accent) 0%,
+    var(--secondary-color) 100%
+  );
 }
 
 .location__content {
@@ -700,9 +725,9 @@ img {
 /* Добавляем поддержку тёмной темы */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #2C2420;
-    --text-color: #F5EBE3;
-    --accent-color: #C8A287;
+    --background-color: #2c2420;
+    --text-color: #f5ebe3;
+    --accent-color: #c8a287;
   }
 
   .countdown,
@@ -715,14 +740,14 @@ img {
 
 /* Добавляем CSS-переменные для лучшей поддержки тем */
 :root {
-  --primary-color: #D4B098;
-  --secondary-color: #E8D6C9;
-  --text-color: #4A4A4A;
-  --background-light: #FAF6F3;
-  --accent-color: #C8A287;
-  --dark-accent: #8B7355;
-  --light-accent: #F5EBE3;
-  --white: #FFFFFF;
+  --primary-color: #d4b098;
+  --secondary-color: #e8d6c9;
+  --text-color: #4a4a4a;
+  --background-light: #faf6f3;
+  --accent-color: #c8a287;
+  --dark-accent: #8b7355;
+  --light-accent: #f5ebe3;
+  --white: #ffffff;
   --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
